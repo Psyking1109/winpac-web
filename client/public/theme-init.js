@@ -1,0 +1,8 @@
+// Apply the saved light/dark choice before the page paints, so it never flashes.
+(function () {
+  try {
+    var t = localStorage.getItem("winpac-theme");
+    if (t !== "light" && t !== "dark") t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    document.documentElement.setAttribute("data-theme", t);
+  } catch (e) { document.documentElement.setAttribute("data-theme", "light"); }
+})();

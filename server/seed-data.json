@@ -1,0 +1,346 @@
+{
+ "company": {
+  "name": "WINPAC Trading Company",
+  "short": "WINPAC",
+  "est": "1988",
+  "tagline": "Have a surface problem? Let's solve it.",
+  "intro": "Abrasives, machines, stone care chemicals and natural stone aggregates for granite and marble factories, flooring contractors and restorers across Sri Lanka.",
+  "motto": "We solve a problem, not just sell a product.",
+  "about": "WINPAC Trading Company was started by K. Balasubramaniam in 1988 as a supplier of terrazzo materials. Today we are the official distributor for manufacturers around the world, supplying solutions for terrazzo, cement, concrete, natural stone and engineered surfaces. As the largest market share holder in our industry, we take equal pride and responsibility in every product we sell.",
+  "vision": "To continuously be the most trusted provider of solutions to problems and requirements of any scale, for any and all surfaces in Sri Lanka.",
+  "mission": "To understand the requirements of our customers and provide the right solution, through our partners or by manufacturing it ourselves.",
+  "address": "34 Central Road, Colombo 12, Sri Lanka",
+  "phones": "+94 11 2438429 / +94 11 2438283",
+  "mobile": "+94 773447041",
+  "email": "winpactc@gmail.com",
+  "hours": "Monday to Saturday, 8.30 am to 5.30 pm",
+  "logo": "/uploads/seed/winpac-logo.png",
+  "chemTitle": "Customised chemical solutions",
+  "chemText": "Where the right product doesn't exist off the shelf, we develop one for your surface. Since 2018 we have provided customised chemical solutions that save contractors time and money.",
+  "chemItems": [
+   {
+    "label": "Cleaning & surface care",
+    "value": "Cleaners and care products matched to stone, terrazzo and concrete."
+   },
+   {
+    "label": "Concrete reactive stains",
+    "value": "Recolour existing grey or white cement floors without breaking them out."
+   },
+   {
+    "label": "Repair & restoration",
+    "value": "Restore damaged and worn surfaces instead of replacing them."
+   }
+  ],
+  "timeline": [
+   {
+    "label": "1988",
+    "value": "Founded by K. Balasubramaniam as a terrazzo materials supplier. CUMI terrazzo abrasives from the first year."
+   },
+   {
+    "label": "2009",
+    "value": "Official Surie Polex distributor for Sri Lanka."
+   },
+   {
+    "label": "2012",
+    "value": "Distributor for High Tech Grinding concrete abrasives and machines."
+   },
+   {
+    "label": "2018",
+    "value": "Started providing customised chemical solutions."
+   },
+   {
+    "label": "2025",
+    "value": "Distributorships for Abrasivos Aguila (Spain) and Abtex non-woven pads."
+   }
+  ],
+  "stonesText": "Chips and pebbles from India, Sri Lanka and Vietnam, graded for terrazzo, pebble wash, landscaping, borders and aquariums. Our oldest and biggest business.",
+  "customers": [
+   "Ilot Colombo",
+   "Prestona Tiles",
+   "Sanken Overseas",
+   "ITC Ratnadeepa",
+   "Marino Leisure Holding",
+   "BMICH"
+  ]
+ },
+ "assets": {
+  "grit": "/uploads/seed/grit-terrazzo.jpg"
+ },
+ "groups": [
+  {
+   "name": "Machines",
+   "blurb": "Floor grinders, polishing machines, vacuums, scrubbers and hand sanders.",
+   "slug": "machines",
+   "order": 0
+  },
+  {
+   "name": "Abrasives",
+   "blurb": "Line abrasives for granite and marble factories, floor grinding and polishing tools, and industrial abrasives.",
+   "slug": "abrasives",
+   "order": 1
+  },
+  {
+   "name": "Chemicals",
+   "blurb": "Stone care, cleaning and customised chemical solutions.",
+   "slug": "chemicals",
+   "order": 2
+  },
+  {
+   "name": "Stones",
+   "blurb": "Natural stone chips and pebbles from India, Sri Lanka and Vietnam.",
+   "slug": "stones",
+   "order": 3
+  }
+ ],
+ "categories": [
+  {
+   "slug": "factory-abrasives",
+   "name": "Factory Abrasives",
+   "group": "abrasives",
+   "shape": "frankfurt",
+   "blurb": "Frankfurt, Fickert and diamond abrasives for granite and marble slab and tile lines.",
+   "order": 0
+  },
+  {
+   "slug": "floor-abrasives",
+   "name": "Floor Grinding & Polishing",
+   "group": "abrasives",
+   "shape": "pad",
+   "blurb": "Diamond pads, grinding tools, terrazzo stones and buffing pads for floors in place.",
+   "order": 1
+  },
+  {
+   "slug": "industrial-abrasives",
+   "name": "Industrial Abrasives",
+   "group": "abrasives",
+   "shape": "sheet",
+   "blurb": "Hardwood sanding and metal grinding and finishing abrasives from CUMI.",
+   "order": 2
+  },
+  {
+   "slug": "machines",
+   "name": "Machines & Equipment",
+   "group": "machines",
+   "shape": "machine",
+   "blurb": "Floor grinders, polishing machines, vacuums, scrubbers and hand sanders.",
+   "order": 3
+  },
+  {
+   "slug": "stone-care",
+   "name": "Stone Care Chemicals",
+   "group": "chemicals",
+   "shape": "tub",
+   "blurb": "Polishing powders, shiners, waxes, sealers, adhesives and resins.",
+   "order": 4
+  },
+  {
+   "slug": "cleaning",
+   "name": "Cleaning Chemicals",
+   "group": "chemicals",
+   "shape": "bottle",
+   "blurb": "Floor, washroom and general cleaners for stone, tile and hard surfaces.",
+   "order": 5
+  },
+  {
+   "slug": "winpac-formulations",
+   "name": "Customised Chemical Solutions",
+   "group": "chemicals",
+   "shape": "can",
+   "blurb": "Chemical solutions developed for your surface since 2018: cleaning, reactive stains, repair and restoration.",
+   "order": 6
+  },
+  {
+   "slug": "aggregates",
+   "name": "Natural Stone Aggregates",
+   "group": "stones",
+   "shape": "chips",
+   "blurb": "Chips and pebbles from India, Sri Lanka and Vietnam for terrazzo, landscaping and aquariums.",
+   "order": 7
+  }
+ ],
+ "purposes": [
+  {
+   "slug": "granite",
+   "name": "Granite processing",
+   "order": 0
+  },
+  {
+   "slug": "marble",
+   "name": "Marble processing",
+   "order": 1
+  },
+  {
+   "slug": "terrazzo",
+   "name": "Terrazzo",
+   "order": 2
+  },
+  {
+   "slug": "concrete",
+   "name": "Concrete floors",
+   "order": 3
+  },
+  {
+   "slug": "restoration",
+   "name": "Floor restoration",
+   "order": 4
+  },
+  {
+   "slug": "sealing",
+   "name": "Sealing & protection",
+   "order": 5
+  },
+  {
+   "slug": "cleaning",
+   "name": "Cleaning & maintenance",
+   "order": 6
+  },
+  {
+   "slug": "landscaping",
+   "name": "Landscaping & borders",
+   "order": 7
+  },
+  {
+   "slug": "aquariums",
+   "name": "Aquariums",
+   "order": 8
+  },
+  {
+   "slug": "woodworking",
+   "name": "Woodworking",
+   "order": 9
+  },
+  {
+   "slug": "metalworking",
+   "name": "Metalworking",
+   "order": 10
+  }
+ ],
+ "audiences": [
+  {
+   "slug": "factories",
+   "name": "Granite & marble factories",
+   "blurb": "Line abrasives for calibrating, grinding and polishing slabs and tiles, with the powders, shiners, resins and adhesives that finish the job.",
+   "purposes": [
+    "granite",
+    "marble"
+   ],
+   "order": 0
+  },
+  {
+   "slug": "contractors",
+   "name": "Flooring contractors",
+   "blurb": "Grinders, pads, terrazzo stones and aggregates for new terrazzo, concrete and stone floors.",
+   "purposes": [
+    "terrazzo",
+    "concrete"
+   ],
+   "order": 1
+  },
+  {
+   "slug": "restorers",
+   "name": "Restoration contractors",
+   "blurb": "Everything to bring a tired floor back: diamond pads, polishing powders, sealers and repair chemicals.",
+   "purposes": [
+    "restoration",
+    "sealing"
+   ],
+   "order": 2
+  },
+  {
+   "slug": "facilities",
+   "name": "Hotels & facility managers",
+   "blurb": "Daily cleaners, scale removers, scrubbers and vacuums that keep stone and tile looking new.",
+   "purposes": [
+    "cleaning"
+   ],
+   "order": 3
+  }
+ ],
+ "brands": [
+  {
+   "slug": "surie-polex",
+   "name": "Surie Polex",
+   "country": "India",
+   "since": "2009",
+   "blurb": "India's largest manufacturer of abrasives, chemicals, machines and equipment for natural stone, cement-based and engineered surfaces, with a worldwide distributor network. Our biggest partner and official distributor for Sri Lanka since 2009.",
+   "tags": [
+    "Industrial concrete",
+    "Natural stone",
+    "Terrazzo",
+    "Engineered stones",
+    "Decorative floorings"
+   ],
+   "url": "https://www.suriepolex.com",
+   "logo": "/uploads/seed/brand-surie-polex.png",
+   "order": 0
+  },
+  {
+   "slug": "cumi",
+   "name": "CUMI",
+   "country": "India",
+   "since": "1988",
+   "blurb": "One of the world's biggest abrasive manufacturers. We have supplied CUMI terrazzo abrasives since our first year, and now also their hardwood abrasives and metal grinding and finishing abrasives.",
+   "tags": [
+    "Terrazzo abrasives",
+    "Hardwood abrasives",
+    "Metal grinding & finishing"
+   ],
+   "url": "https://www.cumi-murugappa.com",
+   "logo": "/uploads/seed/brand-cumi.png",
+   "order": 1
+  },
+  {
+   "slug": "high-tech-grinding",
+   "name": "High Tech Grinding",
+   "country": "China",
+   "since": "2012",
+   "blurb": "A leading name in abrasives and machines for concrete and cement-based surfaces.",
+   "tags": [
+    "Concrete grinding abrasives",
+    "Machines"
+   ],
+   "url": "https://www.hightechgrinding.com",
+   "logo": "/uploads/seed/brand-high-tech-grinding.png",
+   "order": 2
+  },
+  {
+   "slug": "abrasivos-aguila",
+   "name": "Abrasivos Aguila",
+   "country": "Spain",
+   "since": "2025",
+   "blurb": "Care products for natural stone and cement-based surfaces. Our newest distributorship.",
+   "tags": [
+    "Concrete & stone care chemicals"
+   ],
+   "url": "",
+   "logo": "/uploads/seed/brand-abrasivos-aguila.png",
+   "order": 3
+  },
+  {
+   "slug": "abtex",
+   "name": "Abtex",
+   "country": "India",
+   "since": "2025",
+   "blurb": "Non-woven floor polishing and buffing pads from Aone Fibers.",
+   "tags": [
+    "Floor polishing & buffing pads"
+   ],
+   "url": "https://aonefibers.co.in",
+   "logo": "/uploads/seed/brand-abtex.png",
+   "order": 4
+  },
+  {
+   "slug": "kunzle-tasin",
+   "name": "Künzle & Tasin",
+   "country": "Italy",
+   "since": "",
+   "blurb": "Makers of the Stornello hand sanders for stone edges, profiles and detail work.",
+   "tags": [
+    "Hand sanders"
+   ],
+   "url": "https://www.kunzletasin.com",
+   "logo": "/uploads/seed/brand-kunzle-tasin.png",
+   "order": 5
+  }
+ ]
+}

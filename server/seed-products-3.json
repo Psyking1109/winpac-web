@@ -1,0 +1,12 @@
+[
+ {"slug":"wet-dry-vacuum-80l-3-motor","name":"Wet & Dry Vacuum 80 L, 3 Motor","brand":"surie-polex","category":"machines","origin":"India","purposes":["marble","granite","concrete","restoration","cleaning"],"featured":false,
+  "summary":"Large three-motor vacuum that picks up slurry, water and dust between polishing steps.",
+  "description":"Vacuuming the floor clean after every polishing step removes the fine particles left behind, so they can't scratch the surface in the next step. That is the key to a scratch-free polish. The 80-litre, three-motor model suits large floors and heavy slurry. It also works dry: connect it to a floor grinder to collect dust and grind dust-free.",
+  "features":["Wet slurry and water pickup","Dry dust collection with floor grinders","Removes fine particles for a scratch-free polish","Three motors for strong suction on large jobs"],
+  "specs":[{"label":"Tank","value":"80 litres"},{"label":"Motors","value":"3"},{"label":"Use","value":"Wet and dry"}]},
+ {"slug":"wet-dry-vacuum-60l-2-motor","name":"Wet & Dry Vacuum 60 L, 2 Motor","brand":"surie-polex","category":"machines","origin":"India","purposes":["marble","granite","concrete","restoration","cleaning"],"featured":false,
+  "summary":"Two-motor wet and dry vacuum for slurry pickup between polishing steps and dust-free grinding.",
+  "description":"Use it to vacuum the floor clean after each polishing step, so the fine particles left behind can't scratch the surface in the next step. It also collects dry dust when connected to a floor grinder. The 60-litre, two-motor size suits most restoration and polishing jobs.",
+  "features":["Wet slurry and water pickup","Dry dust collection with floor grinders","Removes fine particles for a scratch-free polish"],
+  "specs":[{"label":"Tank","value":"60 litres"},{"label":"Motors","value":"2"},{"label":"Use","value":"Wet and dry"}]}
+]
