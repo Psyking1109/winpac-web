@@ -50,11 +50,17 @@ function seedPhotosAndClients() {
     DB.setMeta("clients-2026-10", { added: true });
   }
 }
+// The admin login set in the hosting settings (ADMIN_USERNAME / ADMIN_PASSWORD) always works:
+// it is created if missing, and its password is updated whenever the setting changes.
 async function ensureAdminFromEnv() {
-  const u = process.env.ADMIN_USERNAME, p = process.env.ADMIN_PASSWORD;
-  if (!u || !p || DB.admins.count()) return;
-  if (p.length < 10) { console.warn("ADMIN_PASSWORD must be at least 10 characters; no admin created."); return; }
+  const u = String(process.env.ADMIN_USERNAME || "").trim(), p = String(process.env.ADMIN_PASSWORD || "");
+  if (!u && !p) return;
+  if (!u || !p) { console.warn("Set both ADMIN_USERNAME and ADMIN_PASSWORD to create the admin login."); return; }
+  if (p.length < 10) { console.warn(`ADMIN_PASSWORD is only ${p.length} characters; it must be at least 10. Admin login NOT set.`); return; }
+  if (p !== p.trim()) console.warn("Note: ADMIN_PASSWORD starts or ends with a space; the space is part of the password.");
+  const existing = DB.admins.find(u);
+  if (existing && await bcrypt.compare(p, existing.hash)) { console.log(`Admin login '${u.toLowerCase()}' is ready.`); return; }
   DB.admins.upsert(u, await bcrypt.hash(p, 12));
-  console.log(`Admin account '${u}' created.`);
+  console.log(existing ? `Admin password for '${u.toLowerCase()}' updated from settings.` : `Admin account '${u.toLowerCase()}' created.`);
 }
 module.exports = { seedIfEmpty, seedProducts, seedPhotosAndClients, ensureAdminFromEnv };
