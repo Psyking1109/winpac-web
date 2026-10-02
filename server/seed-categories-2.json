@@ -1,0 +1,21 @@
+{
+ "_about": "Splits Chemicals and Machines into sub-sections. Applied once; products you move yourself are left alone.",
+ "add": [
+  {"slug":"polishing-crystallising","name":"Polishing, Crystallising & Finishes","group":"chemicals","shape":"tub","blurb":"Polishing powders, crystallisers, shiners, creams and self-shining finishes.","order":20},
+  {"slug":"sealers-protection","name":"Sealers & Stain Protection","group":"chemicals","shape":"can","blurb":"Impregnating sealers, colour enhancers and stain protectors for stone, terrazzo and concrete.","order":21},
+  {"slug":"concrete-densifiers","name":"Concrete Densifiers & Hardeners","group":"chemicals","shape":"can","blurb":"Sodium and lithium silicate densifiers that harden and dustproof concrete and terrazzo.","order":22},
+  {"slug":"grinders-scarifiers","name":"Floor Grinders & Scarifiers","group":"machines","shape":"machine","blurb":"Planetary grinders, edge grinders and scarifiers for concrete, stone and terrazzo.","order":10},
+  {"slug":"polishing-machines","name":"Polishing Machines & Sanders","group":"machines","shape":"machine","blurb":"Single-disc polishers, buffers and hand sanders.","order":11},
+  {"slug":"vacuums-dust","name":"Vacuums & Dust Extraction","group":"machines","shape":"vacuum","blurb":"Wet and dry vacuums for slurry pickup and dust-free grinding.","order":12}
+ ],
+ "move": {
+  "z-xtra-crystallising-powder":"polishing-crystallising","sp-1-liquid-crystalliser":"polishing-crystallising","cr-15-multi-purpose-crystallizer":"polishing-crystallising","gloex-granite-polishing-cream":"polishing-crystallising","ab-10-b-metallising-varnish-gloss":"polishing-crystallising",
+  "sandstone-sealer-wz":"sealers-protection","stainex-floor-sealer":"sealers-protection","trukolor-colour-enhancer":"sealers-protection","stain-protector-concentrate":"sealers-protection",
+  "densi-hard-sodium-silicate":"concrete-densifiers","densi-hard-lithium-silicate":"concrete-densifiers",
+  "floor-grinding-machine-hsp-400":"grinders-scarifiers","floor-grinder-scarifier-sp250":"grinders-scarifiers","htg-gx250-edge-floor-grinder":"grinders-scarifiers",
+  "single-disc-diamond-polisher-2hp":"polishing-machines","single-disc-diamond-polisher-2-5hp":"polishing-machines","stornello-hand-sander":"polishing-machines",
+  "wet-dry-vacuum-60l-2-motor":"vacuums-dust","wet-dry-vacuum-80l-3-motor":"vacuums-dust"
+ },
+ "from": ["stone-care","machines"],
+ "removeIfEmpty": ["stone-care","machines"]
+}

@@ -20,5 +20,10 @@ const out = {
   brands: seed.brands.map(x => ({ ...x, logo: asset(x.logo), _id: id() })),
   products: packs.map(p => ({ images: [], features: [], specs: [], purposes: [], ...p, _id: id() })).map(p => ({ ...p, images: (require("./seed-photos.json")[p.slug] || p.images).map(asset) })).reverse()
 };
+const plan = require("./seed-categories-2.json");
+for (const c of plan.add) if (!out.categories.some(k => k.slug === c.slug)) out.categories.push({ ...c, _id: id() });
+out.products.forEach(p => { if (plan.move[p.slug] && plan.from.includes(p.category)) p.category = plan.move[p.slug]; });
+out.categories = out.categories.filter(c => !plan.removeIfEmpty.includes(c.slug) || out.products.some(p => p.category === c.slug));
+out.categories.sort((a, b) => (a.order || 0) - (b.order || 0));
 fs.writeFileSync(path.join(__dirname, "..", "client", "src", "preview", "data.json"), JSON.stringify(out));
 console.log(`Preview data: ${out.products.length} products, ${out.brands.length} brands.`);

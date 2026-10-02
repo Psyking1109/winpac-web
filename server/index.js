@@ -12,7 +12,7 @@ const multer = require("multer");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const DB = require("./db");
-const { seedIfEmpty, seedProducts, seedPhotosAndClients, ensureAdminFromEnv } = require("./seed");
+const { seedIfEmpty, seedProducts, seedPhotosAndClients, seedSubsections, ensureAdminFromEnv } = require("./seed");
 
 const PORT = +process.env.PORT || 8080;
 const PROD = process.env.NODE_ENV === "production";
@@ -171,6 +171,7 @@ app.get("*", (req, res) => {
   seedIfEmpty(UPLOAD_DIR);
   seedProducts();
   seedPhotosAndClients();
+  seedSubsections();
   await ensureAdminFromEnv();
   if (!DB.admins.count()) console.log("No admin account yet. Create one with: npm run create-admin -- <username> <password>");
   app.listen(PORT, () => console.log(`WINPAC website running on http://localhost:${PORT}`));

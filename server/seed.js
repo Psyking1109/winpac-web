@@ -50,6 +50,25 @@ function seedPhotosAndClients() {
     DB.setMeta("clients-2026-10", { added: true });
   }
 }
+// Splits Chemicals and Machines into sub-sections, once. Only products still in their
+// original category are moved, so anything you have re-arranged yourself stays put.
+function seedSubsections() {
+  if (DB.getMeta("subsections-2026-10")) return;
+  const plan = require("./seed-categories-2.json");
+  for (const c of plan.add) if (!DB.slugExists("categories", c.slug)) DB.create("categories", c);
+  let moved = 0;
+  for (const p of DB.list("products")) {
+    const to = plan.move[p.slug];
+    if (to && plan.from.includes(p.category)) { DB.update("products", p._id, { category: to }); moved++; }
+  }
+  for (const slug of plan.removeIfEmpty) {
+    const cat = DB.list("categories").find(c => c.slug === slug);
+    if (cat && !DB.countWhere("products", "category", slug)) DB.remove("categories", cat._id);
+  }
+  DB.setMeta("subsections-2026-10", { moved });
+  if (moved) console.log(`Arranged ${moved} products into sub-sections.`);
+}
+
 // The admin login set in the hosting settings (ADMIN_USERNAME / ADMIN_PASSWORD) always works:
 // it is created if missing, and its password is updated whenever the setting changes.
 async function ensureAdminFromEnv() {
@@ -63,4 +82,4 @@ async function ensureAdminFromEnv() {
   DB.admins.upsert(u, await bcrypt.hash(p, 12));
   console.log(existing ? `Admin password for '${u.toLowerCase()}' updated from settings.` : `Admin account '${u.toLowerCase()}' created.`);
 }
-module.exports = { seedIfEmpty, seedProducts, seedPhotosAndClients, ensureAdminFromEnv };
+module.exports = { seedIfEmpty, seedProducts, seedPhotosAndClients, seedSubsections, ensureAdminFromEnv };

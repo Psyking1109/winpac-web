@@ -48,3 +48,12 @@
 .clientrow .imgpick .prev{width:110px; height:64px}
 .clientbtns{display:flex; gap:6px}
 @media (max-width:700px){ .clientrow{grid-template-columns:1fr} }
+
+/* Bigger company logo */
+.hdr-in{height:92px}
+.hdr .logo img{height:72px; width:auto}
+.flogo img{height:84px}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 150px)}
+@media (max-width:860px){ .nav{inset:calc(env(safe-area-inset-top,0px) + 92px) 0 auto 0} }
+@media (max-width:700px){ .hdr-in{height:76px} .hdr .logo img{height:56px} .nav{inset:calc(env(safe-area-inset-top,0px) + 76px) 0 auto 0} }
+.filters,.atabs{top:calc(env(safe-area-inset-top,0px) + 108px)}
